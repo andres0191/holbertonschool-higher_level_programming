@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
     for lether in str:
-        if ord(lether) >= (97) and ord(lether) <= (122):
+        if ord(lether) >= (97) and ord(lether) <= (123):
             lether = chr(ord(lether) - 32)
             print("{}".format(lether), end="")
         else:
