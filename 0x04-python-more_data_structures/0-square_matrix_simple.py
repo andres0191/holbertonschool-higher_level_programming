@@ -4,5 +4,5 @@ def square_matrix_simple(matrix=[]):
     if not matrix:
         return(None)
     for i in range(len(matrix)):
-       square[i] = (list(map(lambda x: x**2, matrix[i])))
+        square[i] = (list(map(lambda x: x**2, matrix[i])))
     return(square)
