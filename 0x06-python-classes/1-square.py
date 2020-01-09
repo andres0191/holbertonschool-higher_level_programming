@@ -5,8 +5,4 @@ class Square:
         and instantiation whit size
     """
     def __init__(self, size):
-        """the paramethers of input
-           are size, that is crucial
-           for a square
-        """
        self.__size = size
