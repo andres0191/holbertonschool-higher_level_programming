@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 class Square:
-"""The __int__ method may be documented in either that class level docstring
-    Note: the parameters of input are size."""
-    def __int__(self, size):
-        """prueba"""
+    """"class Square defines a square by:
+        private instance atribute size,
+        and instantiation whit size
+    """
+    def __init__(self, size):
+        """the paramethers of input
+           are size, that is crucial
+           for a square
+        """
         self.__size = size
