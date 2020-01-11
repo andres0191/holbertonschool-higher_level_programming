@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-class Test():
-    pass
 """Function that add a two integer"""
-
-
-def add_integer(a, b=89):
+def add_integer(a, b=98):
     """add two int"""
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
