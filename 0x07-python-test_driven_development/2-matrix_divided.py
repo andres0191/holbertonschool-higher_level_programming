@@ -9,12 +9,13 @@ def matrix_divided(matrix, div):
     if type(matrix) is not list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for idx in range(len(matrix)):
-        if matrix[idx] is not list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-        else:
-            for data_of_list in range(matrix[idx]):
-                if type(data_of_list) is not int and type(data_of_list) is not float:
-                    raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-                else:
-                    data_of_list
-    return (new_matrix)
+#        if matrix[idx] is not list:
+#            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+#        else:
+        for data_of_list in range(len(matrix[idx])):
+            if type(data_of_list) is not int and type(data_of_list) is not float:
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            else:
+                result = round(data_of_list/div, 2)
+                new_matrix[idx][data_of_list] = result
+    return new_matrix
