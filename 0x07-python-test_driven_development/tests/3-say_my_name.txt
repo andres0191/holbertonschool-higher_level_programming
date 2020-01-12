@@ -1,2 +1,14 @@
-Holi 34 h ":
+====================
+3. Say my name module:
+====================
 
+import module:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Function:
+=======.
+Write a function that prints My name is <firstname> <secondname>
+Operations:
+=========
+Text must be a string, otherwise raise a TypeError text must be a string
+There should be no space at the beginning or at the end of each printed line:

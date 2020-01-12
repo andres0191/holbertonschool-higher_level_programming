@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """Function that divides all elements of a matrix """
 def matrix_divided(matrix, div):
+    """
+    div all elements of a matrix
+    """
     new_matrix = []
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")

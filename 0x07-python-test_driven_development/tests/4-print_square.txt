@@ -1,2 +1,15 @@
-      holi        23         "
-	  ;asd
+====================
+4. Print square module:
+====================
+
+import module:
+	>>> print_square = __import__('4-print_square').print_square
+
+
+Function:
+=======.
+Write a function that prints a square with the character #
+Operations:
+=========
+first_name and second_name must be a strings, otherwise raise a TypeError
+first_name must be a string or second_name must be a string
