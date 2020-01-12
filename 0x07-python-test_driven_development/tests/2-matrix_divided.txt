@@ -1,2 +1,37 @@
+***********************************
+2. Divides all elements of a matrix
+***********************************
+import module:
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-Holi23
+***************
+
+Divides elements of a matrix
+
+Test #0
+	>>> matrix_divided(['A', 3, 2], 2)
+	Traceback (most recent call last):
+	TypeError: a must be a integer
+
+Test #1
+	>>> matrix_divided(['A', 'b', 'c'], 2)
+	Traceback (most recent call last):
+	TypeError: a must be a integer
+
+Test #2
+		>>> matrix_divided(['A.4', 3, 2.0], 2)
+	Traceback (most recent call last):
+	TypeError: a must be a integer
+
+Test #3
+	>>> matrix_divided([3, 6, 9], 3)
+	[1, 2, 3]
+
+Test #4
+	>>> add_integer([-1, -2, -3], 1 )
+	[-1, -2, -3]
+
+Test #5
+	>>> add_integer([None], "#PythonisCool")
+	Traceback (most recent call last):
+	TypeError: b must be a integer
