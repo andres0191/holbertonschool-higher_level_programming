@@ -19,7 +19,7 @@ Test #1
 	TypeError: a must be a integer
 
 Test #2
-		>>> matrix_divided(['A.4', 3, 2.0], 2)
+	>>> matrix_divided(['A.4', 3, 2.0], 2)
 	Traceback (most recent call last):
 	TypeError: a must be a integer
 
@@ -28,10 +28,10 @@ Test #3
 	[1, 2, 3]
 
 Test #4
-	>>> add_integer([-1, -2, -3], 1 )
+	>>> matrix_divided([-1, -2, -3], 1 )
 	[-1, -2, -3]
 
 Test #5
-	>>> add_integer([None], "#PythonisCool")
+	>>> matrix_divided([None], "#PythonisCool")
 	Traceback (most recent call last):
 	TypeError: b must be a integer
