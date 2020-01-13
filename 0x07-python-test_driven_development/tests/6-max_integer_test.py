@@ -9,3 +9,7 @@ class TestMaxInteger(unittest.TestCase):
     def case1(self):
         a = __import__('6-max_integer').__doc__
         self.assertTrue(len(a) > 1)
+
+    def case 2(self):
+        b = __import__('6-max_integer').__doc__
+        self.assertTrue(len(a) > 1)
