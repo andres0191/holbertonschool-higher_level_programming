@@ -12,3 +12,24 @@ Operations:
 =========
 Text must be a string, otherwise raise a TypeError text must be a string
 There should be no space at the beginning or at the end of each printed line:
+
+* Text must be a string, otherwise raise a TypeError exception
+	>>> text_indentation(34534)
+	Traceback (most recent call last):
+		...
+	TypeError: text must be a string
+
+* Text with . ? : should print two newlines after
+	>>> text_indentation("Hell.")
+	Hell.
+	<BLANKLINE>
+
+* Text with . ? : should print two newlines after
+	>>> text_indentation("Hell?")
+	Hell?
+	<BLANKLINE>
+
+* Text with . ? : should print two newlines after
+	>>> text_indentation("  Hell:")
+	Hell:
+	<BLANKLINE>
