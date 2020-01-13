@@ -4,6 +4,8 @@
     if the variable not is int
     cast to int
 """
+
+
 def add_integer(a, b=98):
     """
     function and cases of error
