@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
     functino that prints a text
     whit 2 new lines aftesr each
@@ -15,8 +14,6 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
     for i in range(len(text)):
-        flag = 0
         if text[i-1] == '.' or text[i-1] == '?' or text[i-1] == ':':
             print("\n")
         print(text[i], end="")
-    print("\n")
