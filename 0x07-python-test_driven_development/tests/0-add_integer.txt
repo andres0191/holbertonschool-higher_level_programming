@@ -67,3 +67,7 @@ b must be integers or float:
 	>>> add_integer(8, 1e500)
 	Traceback (most recent call last):
 	OverflowError: cannot convert float infinity to integer
+
+a diferent of a or b diferent of b:
+	>>> add_integer(a, b)
+
