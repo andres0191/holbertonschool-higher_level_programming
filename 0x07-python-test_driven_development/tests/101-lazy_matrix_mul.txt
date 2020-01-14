@@ -1,0 +1,22 @@
+==============================
+101.Lazy matrix multiplication
+==============================
+
+Import module:
+	>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+Function:
+=========
+Write a function that multiples 2 matrices by using the module Numpy
+Operations:
+==========
+
+Case 1:
+	>>> lazy_matrix_mul([[4, 3]], (7, 10))
+	Traceback (most recent call last):
+	TypeError: m_b is not a list
+
+case 2:
+	>>> lazy_matrix_mul("holi", [[2, 6]])
+	Traceback (most recent call last):
+	TypeError: m_a is not a list

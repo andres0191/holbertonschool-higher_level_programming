@@ -19,3 +19,17 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_string(self):
         self.assertEqual(max_integer("hello"), 'o')
+
+    def test_valid(self):
+        self.assertEqual(max_integer([-4, 4, 1, 0, 10, 1200]), 1200)
+
+    def valid_tests(self):
+        self.assertEqual(max_integer([0, 25, 55, 98]), 98)
+        self.assertEqual(max_integer([1, 2, 98, 3]), 98)
+
+    def negatives(self):
+        self.assertEqual(max_integer([-98, -55, -20, -1]), -1)
+        self.assertEqual(max_integer([-1, -2, -98, 3]), 3)
+
+    def strings(self):
+        self.assertEqual(max_integer("hello"), 'o')
