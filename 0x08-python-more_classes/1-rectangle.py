@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 class Rectangle():
     """class Rectangle that defines a rectangle """
-
-
     def __init__(self, width=0, height=0):
         if type(width) is not int and type(height) is not int:
             raise TypeError("height must be an integer")
