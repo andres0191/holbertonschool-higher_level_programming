@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 class Rectangle():
+    number_of_instances = 0
+    print_symbol = '#'
     """class Rectangle that defines a rectangle """
+
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
     @property
     def height(self):
@@ -40,7 +44,7 @@ class Rectangle():
 
     def __str__(self):
         for i in range(self.__width):
-            x = str(self.print_symbol) * (i+1)
+            x = (str(self.print_symbol)) * (i+1)
         y = (x + '\n') * (self.__height - 1)
         return(y + x)
 
