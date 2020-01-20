@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def lookyp(obj):
-    return(list)
+def lookup(obj):
+    return (dir(obj))
