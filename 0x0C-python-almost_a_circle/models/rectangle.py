@@ -81,10 +81,11 @@ class Rectangle(Base):
         return (self.__width * self.__height)
 
     def display(self):
-        print('\n')
-        x = ('#' * (self.__width))
-        y = (x + '\n') * (self.__height - 1)
-        print(y + x)
+        r = ('\n' * self.__y)
+        for i in range(self.height):
+            r += (' ' * self.x)
+            r += ('#' * self.width + '\n')
+        print(r, end="")
 
     def __str__(self):
         return ("[Rectangle] ({}) {}\{} - {}/{}".format(self.id, self.__x,
