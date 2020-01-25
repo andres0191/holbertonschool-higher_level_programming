@@ -36,3 +36,11 @@ class Base:
                 v1 = cls.to_json_string(new_list)
             with open(new_doc, 'w') as file:
                 file.write(v1)
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or len(json_string) == 0:
+            json_string = []
+            return json_string
+        else:
+            return (json.dumps(json_string))
