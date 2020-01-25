@@ -88,11 +88,11 @@ class Rectangle(Base):
         print(r, end="")
 
     def __str__(self):
-        return ("[Rectangle] ({}) {}\{} - {}/{}".format(self.id, self.x,
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
                 self.y, self.width, self.height))
-    
+
     def update(self, *args, **kwargs):
-        if len(args) > 0:            
+        if len(args) > 0:
             if len(args) >= 1:
                 self.id = args[0]
             if len(args) >= 2:
@@ -114,4 +114,3 @@ class Rectangle(Base):
                 self.x = kwargs['x']
             if 'y' in kwargs:
                 self.y = kwargs['y']
-            
