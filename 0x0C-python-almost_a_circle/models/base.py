@@ -44,3 +44,7 @@ class Base:
             return json_string
         else:
             return (json.dumps(json_string))
+    
+    def create(cls, **dictionary):
+        if 
+        return(instance)
