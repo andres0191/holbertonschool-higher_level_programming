@@ -43,8 +43,9 @@ class Base:
             json_string = []
             return json_string
         else:
-            return (json.dumps(json_string))
+            return (json.loads(json_string))
 
+    @classmethod
     def create(cls, **dictionary):
         new_clas = cls.__name__
         if new_clas == "Rectangle":
@@ -53,3 +54,15 @@ class Base:
             dummy = cls(46)
         dummy.update(**dictionary)
         return(dummy)
+
+    @classmethod
+    def load_from_file(cls):
+        empty_list = []
+        complete_name = cls.__name__+'.json'
+        try:
+            with open(complete_name, 'r') as f:
+                instance = cls.from_json_string(f.read())
+                instance_list = [cls.create(**line) for line in instance]
+                return instance_list
+        except OSError:
+            return (empty_list)
