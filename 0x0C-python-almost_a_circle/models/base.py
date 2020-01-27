@@ -3,6 +3,7 @@
 
 
 import json
+import turtle
 
 
 class Base:
@@ -77,3 +78,36 @@ class Base:
                 return instance_list
         except OSError:
             return (empty_list)
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ protect with @classmethod the method save_to file
+            and validate if is None. list_objs is a list of
+            instance who inherits of base
+        """
+        new_list = []
+        if list_objs is not None:
+            for i in range(len(list_objs)):
+                new_list.append(list_objs[i].to_dictionary())
+        new_doc = cls.__name__+'.csv'
+        with open(new_doc, 'w') as file:
+            file.write(cls.to_json_string(new_list))
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ load_from_file return a list of instances
+            if the file doesn't exist, return an empty list
+        """
+        empty_list = []
+        complete_name = cls.__name__+'.csv'
+        try:
+            with open(complete_name, 'r') as f:
+                instance = cls.from_json_string(f.read())
+                instance_list = [cls.create(**line) for line in instance]
+                return instance_list
+        except:
+            return (empty_list)
+
+    def draw(list_rectangles, list_squares):
+        turtle.forward(15)
+        turtle.left(25)
