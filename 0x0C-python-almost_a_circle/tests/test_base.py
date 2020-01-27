@@ -10,7 +10,7 @@ import os
 
 
 class TestBaseClassCreation(unittest.TestCase):
-    """Test class for Base class instantiation tests"""
+    """Test class for Base class instantiation tests task 1"""
 
     def test_id_positive(self):
         bo = Base(23)
@@ -41,3 +41,15 @@ class TestBaseClassCreation(unittest.TestCase):
         self.assertEqual(bo.id, 0.5)
         bo = Base(2.4)
         self.assertEqual(bo.id, 2.4)
+
+""" ======= TASK 17 ========= """
+
+    def test_from_json_string(self):
+        string_js = '[{"id": 89, "width": 10, "height": 4, "x": 1, "y": 2}, \
+            {"id": 7, "width": 1, "height": 7, "x": 6, "y": 5}]'
+        jsonconv = Base.from_json_string(string_js)
+        self.assertTrue(type(jsonconv) is list)
+        self.assertEqual(len(jsonconv), 2)
+
+""" ====== END TASK 17 ====== """
+

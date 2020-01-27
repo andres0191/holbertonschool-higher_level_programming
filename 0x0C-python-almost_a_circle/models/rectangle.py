@@ -6,6 +6,7 @@ class Rectangle(Base):
     """ Class Rectangle that inherits from Base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """ class Rectangle that heritance of class Base """
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -31,10 +32,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ getter of width """
         return (self.__width)
 
     @width.setter
     def width(self, value):
+        """ setter of width """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -43,10 +46,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ getter of height """
         return (self.__height)
 
     @height.setter
     def height(self, value):
+        """ setter of height """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -55,10 +60,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ getter of x """
         return (self.__x)
 
     @x.setter
     def x(self, value):
+        """ setter of x """
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -67,10 +74,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """ getter of y """
         return (self.__y)
 
     @y.setter
     def y(self, value):
+        """ setter of y """
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -78,9 +87,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """ area of the rectangle """
         return (self.__width * self.__height)
 
     def display(self):
+        """ print rectangle representate with # """
         r = ('\n' * self.y)
         for i in range(self.height):
             r += (' ' * self.x)
@@ -88,10 +99,14 @@ class Rectangle(Base):
         print(r, end="")
 
     def __str__(self):
+        """ create a __str__ method """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
                 self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
+        """ update the class rectangle by improving
+            the public method
+        """
         if len(args) > 0:
             if len(args) >= 1:
                 self.id = args[0]
@@ -116,6 +131,9 @@ class Rectangle(Base):
                 self.y = kwargs['y']
 
     def to_dictionary(self):
+        """ returns the dictionary represtantion of
+            a rectangle
+        """
         dic = {}
         dic["x"] = self.__x
         dic["y"] = self.__y
