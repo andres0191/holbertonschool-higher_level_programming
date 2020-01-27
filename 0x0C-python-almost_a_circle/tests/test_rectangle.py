@@ -13,10 +13,11 @@ class Testrectangle(unittest.TestCase):
         """
         pep8style = pep8.StyleGuide(quiet=True)
         result = pep8style.check_files(['models/rectangle.py'])
-        self.assertEqual(result.total_errors, 0,
-                        "Found code style errors (and warnings).")
+        self.assertEqual(result.total_errors, 0, "Found code style errors (and warnings).")
+
     def test_subclass(self):
-        self.assertTrue( issubclass(Rectangle, Base))
+        self.assertTrue(issubclass(Rectangle, Base))
+
     def test_parameters(self):
         """ """
         r1 = Rectangle(10, 2)
@@ -40,11 +41,13 @@ class Testrectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
                 r4 = Rectangle()
     """Task 3 """
+
     def is_string(self):
         with self.assertRaises(TypeError):
             R1 = Rectangle(1.01, 3)
         with self.assertRaises(TypeError):
             R1 = Rectangle(1.01, 3)
+
     def test_type_param(self):
         """Task 3 """
         """ WIDTH TESTING """
