@@ -22,7 +22,7 @@ class Base:
         """ valid input list_dictionaries """
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-        return (json.dumps(list_dictionaries))
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
@@ -34,7 +34,7 @@ class Base:
             empty_file = []
             empty_file = cls.__name__
             with open(empty_file, 'w') as file:
-                file.read([])
+                file.write([])
         else:
             new_list = []
             for i in range(len(list_objs)):
