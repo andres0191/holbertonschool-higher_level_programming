@@ -34,8 +34,8 @@ class Base:
         empty_file = []
         if list_objs is None:
             empty_file = cls.__name__+'.json'
-            with open(empty_file, 'w') as file:
-                file.write(cls.to_json_string([]))
+            with open(empty_file, 'w+') as file:
+                file.read(cls.to_json_string([]))
         else:
             new_list = []
             for i in range(len(list_objs)):
