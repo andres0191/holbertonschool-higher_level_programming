@@ -108,6 +108,7 @@ class Base:
         except:
             return (empty_list)
 
+    @staticmethod
     def draw(list_rectangles, list_squares):
         turtle.forward(15)
         turtle.left(25)
