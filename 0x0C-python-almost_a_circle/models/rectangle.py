@@ -10,6 +10,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ class Rectangle that heritance of class Base """
+        super().__init__(id)
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -31,7 +32,6 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
         self.id = id
-        super().__init__(id)
 
     @property
     def width(self):
