@@ -20,8 +20,7 @@ class Base:
     def to_json_string(list_dictionaries):
         """ valid input list_dictionaries """
         if list_dictionaries is None or len(list_dictionaries) == 0:
-            list_dictionaries = []
-            return list_dictionaries
+            return "[]"
         else:
             return (json.dumps(list_dictionaries))
 
