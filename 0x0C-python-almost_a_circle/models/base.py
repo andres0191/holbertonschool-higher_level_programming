@@ -37,10 +37,6 @@ class Base:
         new_doc = cls.__name__+'.json'
         with open(new_doc, 'w') as file:
             file.write(cls.to_json_string(new_list))
-        
-
-
-
 
     @staticmethod
     def from_json_string(json_string):

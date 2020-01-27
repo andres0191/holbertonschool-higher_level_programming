@@ -31,7 +31,6 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        self.id = id
 
     @property
     def width(self):
