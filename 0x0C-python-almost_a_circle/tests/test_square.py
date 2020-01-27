@@ -4,6 +4,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+"""task 11"""
 
 class TestSquare(unittest.TestCase):
     def test_getter(self):
@@ -61,10 +62,14 @@ class TestSquare(unittest.TestCase):
             r1.size = {"hi": 5, "world": 8}
 
     def test_width(self):
-        r1 = Square(5)
+        r1 = Square(6)
         r1.size = 6
         self.assertEqual(r1.width, 6)
         self.assertEqual(r1.height, 6)
+
+    """ Task 12 """
+    def test_update(self):
+        s1 = 
 
 if __name__ == "_main_":
     unittest.main()
