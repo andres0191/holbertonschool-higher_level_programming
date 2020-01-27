@@ -31,18 +31,17 @@ class Base:
             and validate if is None. list_objs is a list of
             instance who inherits of base
         """
-        empty_file = []
-        if list_objs is None:
-            empty_file = cls.__name__+'.json'
-            with open(empty_file, 'w+') as file:
-                file.read(cls.to_json_string([]))
-        else:
-            new_list = []
+        new_list = []
+        if list_objs is not None:
             for i in range(len(list_objs)):
-                new_doc = list_objs[i].__class__.__name__+'.json'
                 new_list.append(list_objs[i].to_dictionary())
-            with open(new_doc, 'w') as file:
-                file.write(cls.to_json_string(new_list))
+        new_doc = list_objs[i].__class__.__name__+'.json'
+        with open(new_doc, 'w') as file:
+            file.write(cls.to_json_string(new_list))
+        
+
+
+
 
     @staticmethod
     def from_json_string(json_string):
