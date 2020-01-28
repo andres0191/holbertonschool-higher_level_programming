@@ -4,6 +4,7 @@
 
 import json
 import turtle
+import random
 
 
 class Base:
@@ -110,5 +111,10 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        turtle.forward(15)
-        turtle.left(25)
+        color = ["blue", "green", "red"]
+        for i in list_rectangles:
+            var1 = turtle.Turtle()
+            var1.pencolor(random(color))
+            var1.visible(False)
+            var1.forward(15)
+            var.left(25)
