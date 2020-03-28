@@ -24,11 +24,15 @@ if __name__ == "__main__":
         password = sys.argv[2]
         database = sys.argv[3]
         name_of_state = sys.argv[4]
+        """ date of input """
     db = MySQLdb.connect(host='localhost',
                          user=username, passwd=password, db=database)
+    """ date of input """
     cur = db.cursor()
+    """ date of input """
     cur.execute('''SELECT * FROM states
                 WHERE name='{}' ORDER BY id ASC'''.format(name_of_state))
+    """ date of input """
     for row in cur.fetchall():
         if row[1] == name_of_state:
             print(row)
