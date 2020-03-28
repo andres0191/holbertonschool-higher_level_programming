@@ -1,30 +1,24 @@
 #!/usr/bin/python3
+""" script that lists all cities
+    from the database hbtn_0e_4_usa
+"""
+
 import MySQLdb
-# MySQLdb= interface for connecting to a MySQL.
 import sys
-# sys module provides access to any command-line arguments.
 
 
 if __name__ == "__main__":
-    #see if the module has been imported or not.
     if len(sys.argv):
-        #date of input
         username = sys.argv[1]
         password = sys.argv[2]
         database = sys.argv[3]
-    #date of input in db
     db = MySQLdb.connect(host='localhost',
                          user=username, passwd=password, db=database)
-    #var of save date of db.cursor
     cur = db.cursor()
-    #query for sql in python
     cur.execute('''SELECT cities.id, cities.name,
                 states.name FROM cities INNER JOIN
                 states ON cities.state_id = states.id''')
-    #recorrer the date of db
     for row in cur.fetchall():
         print(row)
-    # Close all cursors
     cur.close()
-    # Close all databases
     db.close()
