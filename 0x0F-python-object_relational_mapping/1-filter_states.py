@@ -20,17 +20,14 @@ if __name__ == "__main__":
         username = sys.argv[1]
         password = sys.argv[2]
         database = sys.argv[3]
-    """ date of input in db """
     db = MySQLdb.connect(host='localhost',
                          user=username, passwd=password, db=database)
-    """ var of save date of db.cursor """
     cur = db.cursor()
-    """ query for sql in python """
     cur.execute('''SELECT * FROM states
                 WHERE name LIKE 'N%' ORDER BY id ASC''')
-    """ recorrer the date of db """
     for row in cur.fetchall():
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
     """ Close all cursors """
     cur.close()
     """ Close all databases """
