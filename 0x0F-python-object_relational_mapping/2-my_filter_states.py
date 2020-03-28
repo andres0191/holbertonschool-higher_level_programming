@@ -30,3 +30,7 @@ if __name__ == "__main__":
     """ recorrer the date of db """
     for row in cur.fetchall():
         print(row)
+    """ Close all cursors """
+    cur.close()
+    """ Close all databases """
+    db.close()
