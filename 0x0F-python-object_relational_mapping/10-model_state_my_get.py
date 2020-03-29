@@ -16,7 +16,7 @@ from model_state import Base, State
 if __name__ == "__main__":
 
     if len(sys.argv):
-       state_argument = sys.argv[4]
+        state_argument = sys.argv[4]
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
