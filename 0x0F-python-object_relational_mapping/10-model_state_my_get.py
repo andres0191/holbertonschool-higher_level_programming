@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+
+
 """ Write a script that prints the first State
     object from the database hbtn_0e_6_usa
 """
+
+
 import sys
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
