@@ -4,3 +4,9 @@
     value of the X-Request-Id variable found in
     the header of the response.
 """
+import urllib.request
+
+url = 'https://intranet.hbtn.io/status'
+with urllib.request.urlopen(url) as response:
+    html = response.read()
+    print(response.getheader('X-Request-Id'))

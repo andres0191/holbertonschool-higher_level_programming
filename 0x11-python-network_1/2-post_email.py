@@ -5,3 +5,15 @@
     and displays the body of the response
     (decoded in utf-8)
 """
+import urllib.request
+import urllib.parse
+import sys
+
+url = sys.argv[1]
+email = sys.argv[2]
+values = {'email': email}
+data = urllib.parse.urlencode(values)
+data = data.encode('wtf-8')
+with urllib.request.urlopen(url, data) as response:
+    html = response.read()
+    print(html)
