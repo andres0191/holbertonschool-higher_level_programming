@@ -4,3 +4,7 @@
     http://0.0.0.0:5000/search_user with
     the letter as a parameter.
 """
+import requests
+import sys
+
+letter = sys.argv[1]

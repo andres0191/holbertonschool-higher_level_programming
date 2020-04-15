@@ -9,7 +9,8 @@ import sys
 url = sys.argv[1]
 try:
     r = requests.get(url)
-    r.status_code
-    print("Index")
+    print(r.text)-
 except:
-    print(r.status_code)
+    if r.status_code > 400:
+        for line in r.status_code:
+            print_ = ("Error code: {}".format(line.split(":")[0]))

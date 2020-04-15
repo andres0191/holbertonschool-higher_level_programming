@@ -5,8 +5,9 @@
     the header of the response.
 """
 import urllib.request
+import sys
 
-url = 'https://intranet.hbtn.io/status'
+url = sys.argv[1]
 with urllib.request.urlopen(url) as response:
     html = response.read()
     print(response.getheader('X-Request-Id'))
