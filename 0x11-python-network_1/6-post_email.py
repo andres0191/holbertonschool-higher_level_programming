@@ -11,6 +11,6 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
-    payload_dict = {"url": url, "email": email}
+    payload_dict = {"email": email}
     u = requests.post(url, data=payload_dict)
     print(u.text)
