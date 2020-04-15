@@ -5,3 +5,11 @@
     as a parameter, and finally displays
     the body of the response.
 """
+import requests
+import sys
+
+url = sys.argv[1]
+email = sys.argv[2]
+payload_dict = {"url": url, "email": email}
+u = requests.post(url, data=payload_dict)
+print(u.text)

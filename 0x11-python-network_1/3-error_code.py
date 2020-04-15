@@ -10,6 +10,7 @@ import sys
 url = sys.argv[1]
 try:
     urllib.request.urlopen(url)
+    print("Index")
 except urllib.error.HTTPError as e:
-    html = response.read().decode('utf-8')
+    html = e.code
     print("Error code: {}".format(html))

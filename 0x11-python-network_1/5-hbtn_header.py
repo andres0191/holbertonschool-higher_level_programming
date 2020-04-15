@@ -7,7 +7,6 @@
 import requests
 import sys
 
-
 url = sys.argv[1]
 r = requests.get(url)
-print(r.headers.get('content-type'))
+print(r.headers.get('X-Request-Id'))
