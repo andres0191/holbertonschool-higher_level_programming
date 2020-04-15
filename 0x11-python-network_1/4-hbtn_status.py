@@ -3,7 +3,7 @@
     https://intranet.hbtn.io/status
 """
 
-import request
+import requests
 
 if __name__ == "__main__":
     url = 'https://intranet.hbtn.io/status'
