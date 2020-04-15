@@ -7,4 +7,5 @@
 import requests
 import sys
 
-letter = sys.argv[1]
+if __name__ == "__main__":
+    letter = sys.argv[1]

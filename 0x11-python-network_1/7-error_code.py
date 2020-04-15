@@ -6,11 +6,12 @@
 import requests
 import sys
 
-url = sys.argv[1]
-try:
-    r = requests.get(url)
-    print(r.text)-
-except:
-    if r.status_code > 400:
-        for line in r.status_code:
-            print_ = ("Error code: {}".format(line.split(":")[0]))
+if __name__ == "__main__":
+    url = sys.argv[1]
+    try:
+        r = requests.get(url)
+        print(r.text)-
+    except:
+        if r.status_code > 400:
+            for line in r.status_code:
+                print_ = ("Error code: {}".format(line.split(":")[0]))
