@@ -11,6 +11,6 @@ if __name__ == "__main__":
     try:
         r = requests.get(url)
         if r.status_code >= 400:
-            print_ = ("Error code: {}".format(r.status_code))
+            print("Error code: {}".format(r.status_code))
     except:
-        print_ = (r.text)
+        print(r.text)
