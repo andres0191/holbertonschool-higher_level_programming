@@ -5,5 +5,5 @@ const myObject = {
   value: 12
 };
 console.log(myObject);
-:wq:
+MyObject.value: 89;
 console.log(myObject);
