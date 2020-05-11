@@ -7,7 +7,7 @@ class Square extends Squaretask5 {
       c = 'X';
     }
     let i = 0;
-    for (i = 0; i <= this.height; i++) {
+    for (i = 0; i < this.height; i++) {
       console.log(c.repeat(this.width));
     }
   }
