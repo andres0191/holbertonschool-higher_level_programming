@@ -1,6 +1,6 @@
 #!/usr/bin/node
 /* Write a class Rectangle that defines a rectangle */
-const Squaretask5 = require('./5-Square.js');
+const Squaretask5 = require('./5-square');
 class Square extends Squaretask5 {
   charPrint (c) {
     if (c === undefined) {
