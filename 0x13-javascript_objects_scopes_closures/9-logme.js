@@ -2,6 +2,6 @@
 /* Write a function that prints the number of arguments already printed and the new argument value. (see example below) */
 let i = 0;
 exports.logMe = function (item) {
-    console.log('%d:', i, item);
-    i++;
-}
+  console.log('%d:', i, item);
+  i++;
+};
