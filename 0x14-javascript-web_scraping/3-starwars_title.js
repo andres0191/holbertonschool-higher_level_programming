@@ -1,7 +1,8 @@
 #!/usr/bin/node
-/* Write a script that prints the title of a Star Wars movie where the episode number matches a given integer. */
+/* Write a script that prints the title of a Star Wars*/
 let request = require('request');
-request.get('http://swapi.co/api/films/' + process.argv[2] + '/', function (error, response, body) {
+let myurl = 'https://swapi-api.hbtn.io/api/films/:'
+request.get(myurl + process.argv[2] + '/', function (error, response, body) {
   if (error) {
     console.log(error);
   } else if (response.statusCode === 200) {
