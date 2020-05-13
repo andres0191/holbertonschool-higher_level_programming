@@ -3,5 +3,7 @@
 const request = require('request');
 const myurl = process.argv[2];
 request(myurl, function (error, response) {
-  console.log('code:', response && response.statusCode);
+  if (error) {
+    console.log(error);
+  }console.log('code:', response.statusCode);
 });
