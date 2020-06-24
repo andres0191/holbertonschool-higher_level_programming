@@ -9,7 +9,7 @@ Often, programmers fall in love with Python because of the increased productivit
 
 At Holberton School we will learn the essence and fundamentals of Python through various projects and as a final project we will make an AirBnB clone in 3 steps:
 1. [AirBnB Clone V1](https://github.com/andres0191/AirBnB_clone)
-2. [AirBnB Clone V2](https://github.com/andres0191/AirBnB_clone_v2
+2. [AirBnB Clone V2](https://github.com/andres0191/AirBnB_clone_v2)
 3. [AirBnB Clone V4](https://github.com/andres0191/AirBnB_clone_v4)
 
 Task and repositorys of Python
