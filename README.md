@@ -36,3 +36,9 @@ Task and repositorys of Python
 - [0x13. Javascript - Objects, Scopes and Closures ](https://github.com/andres0191/holbertonschool-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
 - [0x14. Javascript - Web scraping ](https://github.com/andres0191/holbertonschool-higher_level_programming/tree/master/0x14-javascript-web_scraping)
 - [0x15. Javascript - Web JQuery](https://github.com/andres0191/holbertonschool-higher_level_programming/tree/master/0x15-javascript-web_jquery)
+
+**Author**
+
+# Andres Felipe Garcia Rendon
+
+- [Github](https://github.com/andres0191) - [Twitter](https://twitter.com/andres0191) - [Linkedin](https://www.linkedin.com/in/anfegar/) - [Whatsapp](https://api.whatsapp.com/send?phone=3054214488&text=Hola,%20soy%20Andres%20Garcia.%20Desarrollador%20Full%20Stack%20egreasdo%20de%20Holberton.%20En%20que%20te%20puedo%20ayudar?)
